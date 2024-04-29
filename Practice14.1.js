@@ -25,6 +25,18 @@ function onlyEvenValues(arr) {
   return evenArray;
 }
 
+//Show First and Last Name
+
+function showFirstAndLast(arr) {
+  let result = [];
+  
+  arr.forEach(function(str) {
+      result.push(str.value(0) + str.value(str.length - 1));
+  });
+
+  return result;
+}
+
 
 // Add Key and Value 
 
@@ -107,11 +119,15 @@ function find(arr, searchValue) {
   })[0];
 }
 
+//Find In Obj
+
 function findInObj(arrOfObjects, key, value) {
   return arrOfObjects.filter(function(obj) {
     return obj[key] === value;
   })[0];
 }
+
+// Remove Vowels
 
 function removeVowels(str) {
   const vowels = "aeiou";
@@ -124,6 +140,7 @@ function removeVowels(str) {
     .join("");
 }
 
+//Double Odd Numbers 
 function doubleOddNumbers(arr) {
   return arr
     .filter(function(number) {
